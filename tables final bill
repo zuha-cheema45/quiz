@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int N;
+    double subtotal;
+    cout<<"enter the number of tables"<<endl;
+    cin>>N;
+    for(int i=1; i<=N; i++){
+    cout<<"enter subtotal for table"<<i<<endl;
+    cin>>subtotal;
+    double service=subtotal*0.07;
+    double tax=subtotal*0.09;
+    double finalbill=subtotal+service+tax;
+    if(finalbill>1500){
+    cout<<"table"<<i<<"final bill:"<<finalbill<<"LARGE"<<endl;
+    }
+    else{
+        cout<<"table"<<i<<"finalbill:"<<finalbill<<endl;
+    }
+    }
+    return 0;
+}
